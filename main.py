@@ -200,12 +200,12 @@ async def package_choice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if choice == "نمونه رایگان":
         await update.message.reply_text(
             "🎉 اینم لینک دریافت نمونه رایگان :\n"
-            "👉 https://rangdaneh.com/sample-pack"
+            "👉 https://www.figma.com/design/onGJHqUsJe9gdYBSgLs28j/free-sample?node-id=0-1&p=f&t=7lkAA7OYhJiRduwl-0"
         )
     else:
         await update.message.reply_text(
             "✨ تیم ما آماده‌ست تا یه داستان اختصاصی برای برندت طراحی کنه!\n"
-            "از اینجا با ما در تماس باش: https://rangdaneh.com/contact"
+            "از اینجا با ما در تماس باش: ---"
         )
     await update.message.reply_text("مرسی که از رنگدانه استفاده کردی 🌱🌈\nبرای شروع دوباره دستور /start رو بزن.")
     return ConversationHandler.END
