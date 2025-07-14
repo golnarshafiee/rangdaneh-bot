@@ -1,3 +1,4 @@
+import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes,
@@ -226,7 +227,8 @@ def main():
 
     while True:
         try:
-            app = ApplicationBuilder().token("7642720505:AAGThFlehN2xhZngOHTYyUAp1EPt15i628U").build()
+            token = os.environ["BOT_TOKEN"]
+            app = ApplicationBuilder().token(token).build()
 
             conv_handler = ConversationHandler(
                 entry_points=[CommandHandler("start", start)],
